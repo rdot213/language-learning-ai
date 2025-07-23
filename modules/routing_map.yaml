@@ -1,0 +1,25 @@
+# 📍 Polyglot AI Routing Map
+# This file defines the logic for directing user input to the correct agents/modules
+
+routing_rules:
+  - condition: language == "ASL"
+    route_to: model_d_silent_tongue
+
+  - condition: language == "Korean" or language == "Spanish"
+    route_to:
+      - model_a_cultural_curator
+      - model_b_edtech_architect
+      - polyglot_professor
+
+  - condition: topic == "introductions"
+    enrich_with: cultural_context
+
+  - condition: style == "flashcard"
+    format: generate_flashcard_set
+
+default:
+  route_to:
+    - model_a_cultural_curator
+    - model_b_edtech_architect
+    - polyglot_professor
+  format: structured_lesson
