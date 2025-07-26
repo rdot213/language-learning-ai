@@ -1,0 +1,20 @@
+agents:
+  - id: polyglot_professor
+    name: The Polyglot Professor
+    role: Master instructor for all languages
+    file: polyglot_professor.md
+
+  - id: cultural_curator
+    name: The Cultural Curator
+    role: Gathers and creates authentic cultural and language content
+    file: model_a_cultural_curator.md
+
+  - id: edtech_architect
+    name: The EdTech Architect
+    role: Designs the app's features, database structure, and code
+    file: model_b_edtech_architect.md
+
+  - id: silent_tongue
+    name: Silent Tongue
+    role: Handles all American Sign Language lessons and visuals
+    file: model_d_silent_tongue.md
