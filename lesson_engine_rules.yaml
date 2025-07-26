@@ -1,0 +1,21 @@
+engine_rules:
+  language_selection:
+    required: true
+    options: [Korean, Spanish, ASL, French, Japanese]
+    default: Korean
+
+  user_profile:
+    fields:
+      - name
+      - proficiency_level
+      - prefers_asl_support
+    logic:
+      asl_enabled: prefers_asl_support == true
+
+  flow_trigger:
+    when: user_starts_lesson
+    then: run lesson_flow.yaml
+
+  fallback_handling:
+    if: agent_unavailable
+    then: polyglot_professor handles explanation
