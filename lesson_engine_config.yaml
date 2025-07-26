@@ -1,0 +1,43 @@
+lesson_engine:
+  name: Real-World Dialogue Simulator
+  version: 1.0
+  description: >
+    Simulates immersive, goal-based conversations with an AI character playing roles
+    such as baristas, shopkeepers, or hotel clerks. Provides natural dialogue and
+    post-simulation feedback to help learners improve.
+
+  languages_supported:
+    - Korean
+    - Spanish
+    - ASL
+    - English
+
+  features:
+    - goal_oriented_prompts
+    - dynamic_roleplay_engine
+    - language_feedback_layer
+    - voice_support (optional)
+    - XP_rewards_integration (optional)
+
+  ai_role_in_simulation:
+    - character_behavior: dynamic and context-aware
+    - scenario_initiation: AI presents initial goal
+    - feedback_summary: vocabulary, grammar, flow
+
+  output:
+    format: transcript + feedback
+    export_options:
+      - text
+      - PDF (planned)
+      - audio (optional)
+
+  dependencies:
+    - openai_gpt4
+    - tts_module (optional)
+    - stt_module (optional)
+
+  tags:
+    - immersion
+    - speaking
+    - feedback
+    - real_world_tasks
