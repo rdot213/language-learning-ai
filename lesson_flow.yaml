@@ -1,0 +1,25 @@
+lesson_flow:
+  - step: introduction
+    description: Greet the user and explain the lesson objective.
+    agent: polyglot_professor
+
+  - step: cultural_context
+    description: Provide cultural insights and examples related to the topic.
+    agent: cultural_curator
+
+  - step: core_lesson
+    description: Teach vocabulary and sentence structure with examples.
+    agent: polyglot_professor
+
+  - step: asl_support
+    description: Show ASL gloss and visuals for key vocabulary (if user has ASL enabled).
+    agent: silent_tongue
+    condition: asl_enabled == true
+
+  - step: technical_build
+    description: Handle any code-based components like quizzes or interactive widgets.
+    agent: edtech_architect
+
+  - step: review
+    description: Recap key points and suggest follow-up activities.
+    agent: polyglot_professor
