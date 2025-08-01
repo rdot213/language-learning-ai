@@ -1,16 +1,13 @@
-# main.py - Prometheus Language AI Backend Starter
-
 from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
     return jsonify({
-        "message": "Prometheus Language AI Backend is running!",
-        "status": "online",
-        "version": "0.1"
+        'message': 'Welcome to the Language Learning AI backend!',
+        'status': 'running'
     })
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
